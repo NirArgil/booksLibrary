@@ -31,7 +31,7 @@ const displayBooks = (books) => {
       return `<li class="book">
                 <h2>${book.volumeInfo.title}</h2>
                 <p>${book.volumeInfo.description?.substring(0, 300)}</p>
-                <img src="${book.volumeInfo.imageLinks?.thumbnail}" />
+                <img src="${book.volumeInfo.imageLinks?.thumbnail}" alt="${book.volumeInfo.title} image" />
             </li>`;
     })
 
